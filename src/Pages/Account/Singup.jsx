@@ -66,11 +66,11 @@ function Singup() {
         })
         .catch(err => {
           // console.log(err.response.data.message)
-          if (err.response.data.message) {
+          if (err) {
             toast({
               position: 'top',
               marginTop: '150px',
-              description: err.response.data.message,
+              description: err.response,
               status: 'error',
               duration: 3000,
               isClosable: true,
